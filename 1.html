@@ -144,7 +144,69 @@
                 <a href="https://opentutorials.org" target="_blank" title="생활코딩">생활코딩 관련 사이트</a>
               <li>b. target="_blank"는 link를 click 했을때 새 탭으로 보여준다.
               <li>c. title="생활코딩"은 해당 link에 마우스를 가져가면 툴 팁이 뜬다.
+
+      1.11 Web1 부록. 코드의 힘: 동영상 삽입<br>
+          <ul>
+            <li> 1. 유튜브(YouTube) 원하는 동영상 click
+            <li>2. Share(공유) click
+            <li>3. 'Embed(퍼가기)' or 'Source' click
+            <li>4. {예시}<br>
+               [iframe width="" height="" src="https://www.~~" frameborder="" allowfullscreen][/iframe]
+          </ul>
+
     </h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6kuZPfaqcE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </p>
+    <p>
+       1.12 Web1 부록. 코드의 힘: 댓글 기능 추가<br>
+       <ul>
+         <li>1. <a href="https://livere.com/">livere.com</a> 로그인 한다.
+         <li>2. 인사이트 설정하기 이동
+         <li>3. 인사이트 설정->댓글 관리, 설정하기, 댓글알림, <u>코드관리</u>, 수익관리 가능
+             4. 댓글기능은 반드시 web 주소(http://, htts://)에서만 구연 된다.
+         <li>5. {예시}<br>
+           <!-- 라이브리 시티 설치 코드 -->
+           <div id="lv-container" data-id="city" data-uid="MTAyMC81MTU1NC8yODAzNQ==">
+           <script type="text/javascript">
+           (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);})(document, 'script');
+           </script>
+           <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+           </div>
+           <!-- 시티 설치 코드 끝 -->
+       </ul>
+    </p>
+
+    <p>
+       1.12 Web1 부록. 코드의 힘: 채팅(chat) 기능 추가<br>
+       <ul>
+         <li>1. <a href="https://www.tawk.to/">tawk 채팅 무료 사이트</a> 로그인 한다.
+         <li>2. 로그인 -> 관리자 설정 -> </>widget code -> Source 복사하여 내 사이트 붙이기 하여 사용.
+         <li>5. {예시}<br>
+           <!--Start of Tawk.to Script-->
+           <script type="text/javascript">
+           var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+           (function(){
+           var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+           s1.async=true;
+           s1.src='https://embed.tawk.to/5f5f84344704467e89eed497/default';
+           s1.charset='UTF-8';
+           s1.setAttribute('crossorigin','*');
+           s0.parentNode.insertBefore(s1,s0);
+           })();
+           </script>
+           <!--End of Tawk.to Script-->
+       </ul>
     </p>
   </body>
 </HTML>
